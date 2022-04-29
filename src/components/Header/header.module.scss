@@ -1,12 +1,18 @@
-.container {
-  padding: 3rem 0;
-}
+.header {
+  &Container {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
 
-.wrapper {
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 0 2rem;
+  &Content {
+    max-width: 700px;
+    margin: 0 auto;
+    height: 6.5rem;
+    padding: 0 2rem;
+    cursor: pointer;
 
-  display: flex;
-  align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }

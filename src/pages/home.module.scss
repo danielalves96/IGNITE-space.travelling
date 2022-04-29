@@ -1,53 +1,36 @@
-.posts {
-  margin: 3rem auto 0;
+.home {
+  &Container {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
 
-  a {
-    display: block;
+  &Content {
+    max-width: 700px;
+    margin: 0 auto;
+  }
 
-    strong {
-      display: block;
-      margin-top: 1rem;
-
+  &Post {
+    margin-top: 3rem;
+    a {
+      font-weight: 700;
       font-size: 1.75rem;
-      font-weight: bold;
-      color: var(--title);
       line-height: 2rem;
+      letter-spacing: -0.5px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      cursor: pointer;
+      transition: color 0.5s;
 
-      transition: color 0.2s;
+      &:hover {
+        color: var(--pink-500);
+      }
     }
-
     p {
-      margin-top: 0.5rem;
-      line-height: 1.625rem;
+      font-weight: 400;
+      font-size: 1.125rem;
+      color: var(--gray-50);
+      line-height: 2rem;
     }
-
-    &:hover strong {
-      color: var(--highlight);
-    }
-
-    footer {
-      margin-top: 0.5rem;
-
-      display: flex;
-      align-items: center;
-      font-size: 0.875rem;
-
-      time {
-        display: flex;
-        align-items: center;
-
-        font-size: 0.875rem;
-
-        & + svg {
-          margin-left: 1rem;
-        }
-      }
-
-      svg {
-        margin-right: 0.5rem;
-      }
-
-    }
-
   }
 }
